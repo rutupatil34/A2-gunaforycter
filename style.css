@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    background-color: #090909;
+}
+
+.maincontainer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #090909;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 75%;
+    padding-top: 30px;
+}
+
+.container .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.container .title h1{
+    font-size: 70px;
+    color: white;
+}
+
+.container .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.cards .card1{
+    padding: 25px 20px;
+    width: 330px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to bottom, #1A1816, #101010);
+}
+
+.card1 .badge{
+    border: 1px solid #F97F10;
+    padding: 4px 15px;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 100;
+    top: 18px;
+    left: 17px;
+    color: #F97F10;
+}
+
+.card1 img{
+    height: 330px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.card1 h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.card1 p{
+    font-size: 18px;
+    font-weight: 100;
+    color: gray;
+    padding-bottom: 15px;
+}
+
+.card1 .divider-line{
+    border: 0.5px solid #F97F10;
+    width: 70px;
+}
+
+.card1 h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 15px;
+    color: #F97F10;
+}
+
+.card1:hover{
+    border: 2px solid #F97F10;
+    box-shadow:
+    0 0 10px rgba(249,127,16,0.4),
+    inset 0 0 25px rgba(249, 127, 16, 0.4);
+}
+
+.container .special{
+    padding: 30px 50px;
+    background: linear-gradient(to right, #1A1816, #0c0c0c);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.special img{
+    width: 250px;
+}
+
+.finfo{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.finfo h3{
+    font-size: 20px;
+    font-weight: 200;
+    color: #F97F10;
+    letter-spacing: 3px;
+}
+
+.finfo h1{
+    font-size: 50px;
+    font-weight: 200;
+    color: white;
+}
+
+.finfo p{
+    font-size: 20px;
+    font-weight: 200;
+    color: gray;
+}
+
+.finfo button{
+    width: fit-content;
+    color: #F97F10;
+    border: 1px solid #F97F10;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.finfo button:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0 0 10px rgba(249,127,16,0.4),
+    inset 0 0 25px rgba(249, 127, 16, 0.4);
+}
+
+.special:hover{
+    border: 2px solid #F97F10;
+    box-shadow:
+    0 0 10px rgba(249,127,16,0.4),
+    inset 0 0 25px rgba(249, 127, 16, 0.4);
+}
+
+.container .line{
+    border: 2px solid #F97F10;
+    margin-bottom: 20px;
+}
+
+.container .footer{
+    padding: 15px 30px;
+    background-color: #090909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+
+.footer .name{
+    cursor: pointer;
+}
+
+.footer .more{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #F97F10;
+}
+
+.footer .social-media{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.ri-instagram-line,
+.ri-facebook-fill,
+.ri-twitter-fill{
+    color: #F97F10;
+    cursor: pointer;
+}
